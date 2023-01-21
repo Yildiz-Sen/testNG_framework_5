@@ -3,7 +3,7 @@ package utilities;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
 
 import java.util.concurrent.TimeUnit;
 
@@ -15,11 +15,11 @@ public class Driver {
 
     public static WebDriver getDriver(){
         if(driver == null){
-       //     WebDriverManager.chromedriver().setup();
-        //    driver = new ChromeDriver();
+           // WebDriverManager.chromedriver().setup();
+         //   driver = new ChromeDriver();
 
-            WebDriverManager.firefoxdriver().setup();
-            driver = new FirefoxDriver();
+            WebDriverManager.getInstance(SafariDriver.class);
+            driver = new SafariDriver();
 
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

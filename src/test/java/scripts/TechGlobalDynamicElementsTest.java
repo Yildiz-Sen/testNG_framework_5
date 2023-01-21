@@ -20,13 +20,9 @@ public class TechGlobalDynamicElementsTest extends TechGlobalBase{
         techGlobalFrontendTestingHomePage.clickOnCard(2);
 
         Assert.assertTrue(techGlobalDynamicElementsPage.box1.isDisplayed());
+        Assert.assertTrue(techGlobalDynamicElementsPage.box2.isDisplayed());
         Assert.assertEquals(techGlobalDynamicElementsPage.box1.getText(), "Box 1");
+        Assert.assertEquals(techGlobalDynamicElementsPage.box2.getText(), "Box 2");
 
     }
 }
-
-
-
-
-
-

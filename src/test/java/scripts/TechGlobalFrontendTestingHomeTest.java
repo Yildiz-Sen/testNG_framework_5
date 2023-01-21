@@ -4,8 +4,9 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.TechGlobalFrontendTestingHomePage;
+import utilities.Waiter;
 
-public class TestGlobalFrontendTestingHomeTest extends TechGlobalBase{
+public class TechGlobalFrontendTestingHomeTest extends TechGlobalBase{
 
     @BeforeMethod
     public void setPage(){

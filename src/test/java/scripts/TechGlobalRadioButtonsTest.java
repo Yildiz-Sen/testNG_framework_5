@@ -5,6 +5,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.TechGlobalFrontendTestingHomePage;
 import pages.TechGlobalRadioButtonsPage;
+import utilities.Waiter;
 
 public class TechGlobalRadioButtonsTest extends TechGlobalBase {
 

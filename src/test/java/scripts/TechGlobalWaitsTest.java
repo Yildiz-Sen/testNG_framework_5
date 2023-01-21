@@ -8,11 +8,10 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.TechGlobalFrontendTestingHomePage;
 import pages.TechGlobalWaitsPage;
-import scripts.TechGlobalBase;
 import utilities.Driver;
 import utilities.Waiter;
 
-public class TechGlobalWaitsTest extends TechGlobalBase {
+public class TechGlobalWaitsTest extends TechGlobalBase{
 
     /**
      * Go to https://techglobal-training.netlify.app/
@@ -40,6 +39,8 @@ public class TechGlobalWaitsTest extends TechGlobalBase {
 //        Assert.assertTrue(techGlobalWaitsPage.redBox.isDisplayed());
         Waiter.waitForVisibilityOfElement(techGlobalWaitsPage.blueBox, 60);
         Assert.assertTrue(techGlobalWaitsPage.blueBox.isDisplayed());
+
+
 
     }
 }
